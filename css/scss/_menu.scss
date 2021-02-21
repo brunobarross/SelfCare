@@ -1,0 +1,17 @@
+header {
+  padding: 16px 0;
+}
+
+.menu {
+  @include flexbox;
+}
+
+.icones {
+  @include flexbox;
+  li + li {
+    margin-left: 16px;
+  }
+  img {
+    width: 22px;
+  }
+}

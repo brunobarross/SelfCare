@@ -1,0 +1,43 @@
+//CORES
+
+$verde: #5ca720;
+$preto: #161616;
+$cinza-linhas: #a5a1a1;
+$cinza-bg: #f9f9f9;
+
+//fontes
+
+$fonte-1: "Lato", sans-serif;
+
+// CALCULO DE EM
+
+@function em($pixel, $contexto: 16) {
+  @return $pixel / $contexto + em;
+}
+
+// Mixin Tipografia
+
+@mixin tipo-1($tamanho) {
+  font-family: $fonte-1;
+  @if $tamanho == 16 {
+    font-size: em(16);
+    line-height: em(24, 16); // mudo o contexto do em pra 18
+  } @else if $tamanho == 18 {
+    font-size: em(18);
+    line-height: em(30, 18); //
+  } @else if $tamanho == 24 {
+    font-size: em(24);
+    line-height: em(30, 24);
+  }
+}
+
+@mixin flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin container-4 {
+  max-width: calc(#{$l-device} / 3 - $gutter);
+}

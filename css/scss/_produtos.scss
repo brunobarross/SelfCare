@@ -1,0 +1,45 @@
+.quantidade {
+  padding: 16px 0;
+  border-bottom: 1px solid $cinza-linhas;
+}
+
+.quantidade-nav {
+  @include flexbox;
+  h2 {
+    @include tipo-1(18);
+    font-weight: 700;
+  }
+  p {
+    @include tipo-1(16);
+  }
+}
+.produtos {
+  padding: 32px 0 64px 0;
+}
+
+.galeria {
+  @include flexbox;
+  .item {
+    margin: 32px 0;
+    max-width: 300px;
+    h2 {
+      padding-top: 16px;
+      padding-bottom: 8px;
+      @include tipo-1(18);
+    }
+    span {
+      color: $preto;
+      margin-right: 2px;
+      font-weight: 400;
+      @include tipo-1(16);
+    }
+    p {
+      @include tipo-1(18);
+      color: $verde;
+      font-weight: 700;
+    }
+  }
+  @include responsivo(mobile) {
+    width: 150px;
+  }
+}

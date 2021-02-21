@@ -1,0 +1,268 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #161616;
+}
+
+header {
+  padding: 16px 0;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icones li + li {
+  margin-left: 16px;
+}
+
+.icones img {
+  width: 22px;
+}
+
+.intro {
+  background-image: url("../img/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.quantidade {
+  padding: 16px 0;
+  border-bottom: 1px solid #a5a1a1;
+}
+
+.quantidade-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantidade-nav h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  font-weight: 700;
+}
+
+.quantidade-nav p {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.produtos {
+  padding: 32px 0 64px 0;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.galeria .item {
+  margin: 32px 0;
+  max-width: 300px;
+}
+
+.galeria .item h2 {
+  padding-top: 16px;
+  padding-bottom: 8px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+}
+
+.galeria .item span {
+  color: #161616;
+  margin-right: 2px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.galeria .item p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  color: #5ca720;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 759px) {
+  .galeria {
+    width: 150px;
+  }
+}
