@@ -1,0 +1,105 @@
+// BASE
+@import "fonts";
+@import "variaveis__mixins";
+@font-face {
+    font-family: 'Gilroy';
+    src: url('font/Gilroy-Bold.ttf') ;
+}
+
+
+$font-gilroy: 'Gilroy',
+arial;
+$preto-claro:#444444;
+
+
+
+// BOOTSTRAP
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/root";
+
+//@import "./bootstrap/scss/reboot";
+//@import "bootstrap/scss/type";
+
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/button-group";
+
+//for all
+@import "reset";
+@import "responsivo";
+@import "animation";
+@import "menu";
+@import "footer";
+
+
+body {
+    @include font;
+    scroll-behavior: smooth;
+}
+.site{
+    overflow: hidden;
+}
+
+
+.body__home {
+    @import "main__home";
+    @import "blog__home.scss";
+    @import "oficinas__novo.scss";
+
+}
+
+.body__matriculas {
+    @import "main__matriculas";
+}
+
+.body__blog {
+    @import "main__blog";
+    position: relative;
+}
+
+.body__projetos {
+    @import "main__projetos";
+    position: relative;
+}
+
+.body__oficina {
+    @import "main__oficinas";
+}
+
+.body__contato {
+    @import "page__contato";
+}
+
+.body__associacao {
+    @import "main__associacao";
+}
+
+.body__a-escola {
+    @import "main__a-escola";
+}
+
+.body__ademc {
+    @import "main__ademc";
+}
+
+
+
+
+/* MUDAR DEPOIS */
+
+
+
+// =======================================
+
+
+#logoData {
+    @include data__logo;
+}
