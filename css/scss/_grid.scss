@@ -34,6 +34,14 @@ $s-device: 480px;
 .container {
   max-width: $l-device;
   margin: 0 auto;
-  padding-left: $gutter / 2;
-  padding-right: $gutter / 2;
+  padding-left: $gutter;
+  padding-right: $gutter;
+  @include responsivo(tablet) {
+    max-width: $m-device;
+  }
+  @include responsivo(mobile){
+    max-width: $s-device;
+  }
 }
+
+

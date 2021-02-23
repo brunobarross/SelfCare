@@ -4,6 +4,7 @@ $verde: #5ca720;
 $preto: #161616;
 $cinza-linhas: #a5a1a1;
 $cinza-bg: #f9f9f9;
+$branco: #fff;
 
 //fontes
 
@@ -38,6 +39,12 @@ $fonte-1: "Lato", sans-serif;
   align-items: center;
 }
 
-@mixin container-4 {
-  max-width: calc(#{$l-device} / 3 - $gutter);
+@mixin grid-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  @include responsivo(mobile) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
+

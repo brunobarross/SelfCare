@@ -18,10 +18,14 @@
 }
 
 .galeria {
-  @include flexbox;
-  .item {
-    margin: 32px 0;
-    max-width: 300px;
+  @include grid-layout;
+  margin: 32px auto 64px auto;
+  justify-content: center;
+  grid-gap: 32px;
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
     h2 {
       padding-top: 16px;
       padding-bottom: 8px;
@@ -38,8 +42,11 @@
       color: $verde;
       font-weight: 700;
     }
+    @include responsivo(mobile){
+      margin: 32px auto 32px auto;
+      p, h2 {
+        @include tipo-1(16);
+      }
+    }
   }
-  @include responsivo(mobile) {
-    width: 150px;
-  }
-}
+  

@@ -1,0 +1,105 @@
+.footer {
+    background-color: $cinza-bg;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.footer1 {
+    @include flexbox;
+    align-items: flex-start;
+    border-bottom: 1px solid $cinza-linhas;
+    padding-bottom: 16px;
+    
+}
+
+.nav-footer {
+    & ul {
+        display: flex;
+        flex-direction: column; 
+    & li a {
+            color: $preto;
+            text-decoration: none;
+            display: block;
+            padding-bottom: 8px;
+            font-weight: 600;
+            @include tipo-1(16);
+        }
+    }
+}   
+
+.newsletter {
+    @include responsivo(mobile) {
+        width: 100%;
+    }
+    h2 {
+        padding-bottom: 16px;
+        font-weight: 600;
+        @include responsivo(mobile) {
+            padding-top: 32px;
+        }
+    }
+    form {
+    @include flexbox;
+    align-items: flex-start;
+    justify-content: baseline;
+    & input {
+        display: block;
+        width: 350px;
+        padding: 17px;
+        outline: 0;
+        border: 1px solid $cinza-linhas;
+        @include responsivo(mobile) {
+            width: 100%;
+        }
+        @include responsivo(tablet) {
+            width: 250px;
+        }
+
+        &::placeholder {
+            @include tipo-1(18);
+            font-weight: 500;
+        }
+    }
+    & button {
+        width: 110px;
+        padding: 16px;
+        background: $verde;
+        outline: 0;
+        border: none;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+        @include tipo-1(16);
+        line-height: normal;
+        @include responsivo(mobile) {
+            width: 100%;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+    }
+}
+}
+
+.footer2 {
+    @include flexbox;
+    align-items: center;
+    padding-top: 16px;
+}
+.redes-sociais {
+    @include flexbox;
+    & li img {
+        margin-right: 16px;
+        max-width: 35px;
+        
+    }
+}
+
+.cartoes {
+    @include flexbox;
+    & img{
+        max-width: 50px;
+        margin-right: 8px;
+    }
+}
