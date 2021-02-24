@@ -5,6 +5,6 @@
   background-position: center;
   height: 400px;
   @include responsivo(mobile){
-
+    background-image: url("/img/banner-mobile.png");
   }
 }
