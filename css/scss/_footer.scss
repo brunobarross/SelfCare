@@ -2,6 +2,10 @@
     background-color: $cinza-bg;
     padding-top: 64px;
     padding-bottom: 64px;
+    @include responsivo(mobile){
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
 
 .footer1 {
